@@ -1,0 +1,43 @@
+:root {
+    --color: blue;
+}
+
+.logo-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+h3.logo-grid__title {
+    margin: 0;
+    padding: 0;
+    position: static;
+    width: 100%;
+    display: table-cell; 
+    vertical-align: middle; 
+    text-align: center;
+    font-size: 32px;
+    line-height: 36px;
+}
+
+@media (min-width: 768px) {
+    .logo-grid {
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+    .logo-grid__item {
+        width: calc(25% - 10px);
+        margin-bottom: 10px;
+        background: rgba(252, 195, 44, 0.4);
+        color: #fff;
+        height: 160px;
+        display: table;
+    }
+    .logo-grid__item--void {
+        background: #000;
+        opacity: 0.3;
+    }
+}
+
+
+
+
